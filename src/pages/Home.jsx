@@ -1,6 +1,6 @@
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import { FaTelegram, FaGithub } from "react-icons/fa";
+import { FaTelegram, FaGithub, FaInstagram } from "react-icons/fa";
 
 export function Home() {
     return (
