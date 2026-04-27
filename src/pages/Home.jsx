@@ -19,7 +19,7 @@ export function Home() {
                     <div className="space-y-6 text-center md:text-left">
                     <h1 className="text-3xl md:text-5xl font-bold leading-tight text-slate-800">
                         Salom, men <b className="text-indigo-600">Azatbek</b>
-                    </h1>
+                    </h1><br />
 
                     <p className="max-w-xl text-base md:text-lg text-slate-600 leading-relaxed mx-auto md:mx-0">
                         Men <b>Samarqand Davlat Universiteti (SamDU)</b> Sun’iy intellekt fakultetida tahsil olaman va Full Stack dasturchi bo‘lishni maqsad qilganman.
