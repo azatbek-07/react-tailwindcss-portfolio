@@ -1,6 +1,7 @@
 import { Header } from "../components/Header";
 import { motion } from "framer-motion";
-
+import { FaMapMarkerAlt   } from "react-icons/fa";
+import { GraduationCap } from "lucide-react";
 
 export function About() {
     return (
@@ -23,7 +24,22 @@ export function About() {
                                 Salom! Men Azatbek Ermalaevman. Men Qoraqalpog‘iston Respublikasida tug‘ilganman va hozirda Samarqand Davlat Universiteti (SamDU) Sun’iy intellekt fakultetida tahsil olaman. Men Full Stack dasturchi sifatida o‘zimni rivojlantirib boryapman.
 
                                 Dasturlashga qiziqishim orqali men frontend va backend texnologiyalarini o‘rganib kelmoqdaman. Hozirda asosan React, JavaScript, Tailwind CSS kabi frontend texnologiyalarida ishlayapman va zamonaviy, qulay interfeyslar yaratishga harakat qilaman.
-                            </p>
+                            </p><br />
+
+                            <div className="flex">
+                                <div className="flex items-center max-w-30 gap-2 text-sm">
+                                    <FaMapMarkerAlt className="text-red-500 text-xl" />
+                                    <p>Samarqand, O'zbekiston</p>
+                                </div>
+                                <div className="flex items-center max-w-30 gap-2 text-sm">
+                                    <GraduationCap className="w-8 h-8 text-indigo-600" />
+                                    <p>SamDu talabasi</p>
+                                </div>
+                                <div className="flex items-center max-w-30 gap-2 text-sm">
+                                    <FaMapMarkerAlt className="text-red-500 text-xl" />
+                                    <p>Samarqand, O'zbekiston</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </motion.div>
