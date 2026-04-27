@@ -1,6 +1,7 @@
 import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
 import { motion } from "framer-motion";
-import { FaMapMarkerAlt   } from "react-icons/fa";
+import { FaMapMarkerAlt, FaBriefcase   } from "react-icons/fa";
 import { GraduationCap } from "lucide-react";
 
 export function About() {
@@ -26,18 +27,18 @@ export function About() {
                                 Dasturlashga qiziqishim orqali men frontend va backend texnologiyalarini o‘rganib kelmoqdaman. Hozirda asosan React, JavaScript, Tailwind CSS kabi frontend texnologiyalarida ishlayapman va zamonaviy, qulay interfeyslar yaratishga harakat qilaman.
                             </p><br />
 
-                            <div className="flex">
+                            <div className="flex gap-20">
                                 <div className="flex items-center max-w-30 gap-2 text-sm">
                                     <FaMapMarkerAlt className="text-red-500 text-xl" />
                                     <p>Samarqand, O'zbekiston</p>
                                 </div>
-                                <div className="flex items-center max-w-30 gap-2 text-sm">
-                                    <GraduationCap className="w-8 h-8 text-indigo-600" />
+                                <div className="flex items-center max-w-50 gap-2 text-sm">
+                                    <GraduationCap className="w-8 h-8 text-red-500" />
                                     <p>SamDu talabasi</p>
                                 </div>
-                                <div className="flex items-center max-w-30 gap-2 text-sm">
-                                    <FaMapMarkerAlt className="text-red-500 text-xl" />
-                                    <p>Samarqand, O'zbekiston</p>
+                                <div className="flex items-center max-w-50 gap-2 text-sm">
+                                    <FaBriefcase className="w-6 h-6 text-2xl text-red-500" />
+                                    <p>1+ Yillik Tajriba</p>
                                 </div>
                             </div>
                         </div>
@@ -57,6 +58,8 @@ export function About() {
 
 
             </section>
+
+            <Footer/>
 
         </>
 
