@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export function Header() {
     return (
         <>
-            <header className="bg-white/70 backdrop-blur-lg shadow-sm fixed w-full z-50 border-b border-slate-200">
+            <header className="bg-white/70 backdrop-blur-lg shadow-sm fixed top-0 left-0  h-16 w-full z-50 border-b border-slate-200">
                 <nav className="flex justify-between md:justify-around items-center px-4 md:px-10 h-16 max-w-7xl mx-auto">
 
                     <h1 className="text-xl md:text-2xl font-bold tracking-wide text-slate-800">
@@ -29,7 +29,7 @@ export function Header() {
                         <Link className="relative hover:text-indigo-600 after:content-[''] after:absolute after:left-0 after:-bottom-1 
         after:w-0 after:h-0.5 after:bg-indigo-600 
         after:transition-all after:duration-300 hover:after:w-full"
-                            to="/">Blog</Link>
+                            to="/blog">Blog</Link>
                     </div>
                 </nav>
             </header>
