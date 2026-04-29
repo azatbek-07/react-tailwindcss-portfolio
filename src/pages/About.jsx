@@ -3,8 +3,11 @@ import { Footer } from "../components/Footer";
 import { motion } from "framer-motion";
 import { FaMapMarkerAlt, FaBriefcase   } from "react-icons/fa";
 import { GraduationCap } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import i18n from "i18next";
 
 export function About() {
+    const { t } = useTranslation(); 
     return (
         <>
             <Header />
@@ -19,26 +22,24 @@ export function About() {
                 >
                     <div className="max-w-xl text-center md:text-left">
                         <div className="text-lg md:text-xl leading-relaxed">
-                            <h1 className="text-2xl md:text-5xl font-bold mb-4">Men haqimda</h1><br />
+                            <h1 className="text-2xl md:text-5xl font-bold mb-4">{t("about-me.title")}</h1><br />
 
                             <p>
-                                Salom! Men Azatbek Ermalaevman. Men Qoraqalpog‘iston Respublikasida tug‘ilganman va hozirda Samarqand Davlat Universiteti (SamDU) Sun’iy intellekt fakultetida tahsil olaman. Men Full Stack dasturchi sifatida o‘zimni rivojlantirib boryapman.
-
-                                Dasturlashga qiziqishim orqali men frontend va backend texnologiyalarini o‘rganib kelmoqdaman. Hozirda asosan React, JavaScript, Tailwind CSS kabi frontend texnologiyalarida ishlayapman va zamonaviy, qulay interfeyslar yaratishga harakat qilaman.
+                                {t("about-me.description")}
                             </p><br />
 
                             <div className="flex gap-20">
                                 <div className="flex items-center max-w-30 gap-2 text-sm">
                                     <FaMapMarkerAlt className="text-red-500 text-xl" />
-                                    <p>Samarqand, O'zbekiston</p>
+                                    <p>{t("about-me.p.location")}</p>
                                 </div>
                                 <div className="flex items-center max-w-50 gap-2 text-sm">
                                     <GraduationCap className="w-8 h-8 text-red-500" />
-                                    <p>SamDu talabasi</p>
+                                    <p>{t("about-me.p.talaba")}</p>
                                 </div>
                                 <div className="flex items-center max-w-50 gap-2 text-sm">
                                     <FaBriefcase className="w-6 h-6 text-2xl text-red-500" />
-                                    <p>1+ Yillik Tajriba</p>
+                                    <p>{t("about-me.p.tajriba")}</p>
                                 </div>
                             </div>
                         </div>

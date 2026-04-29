@@ -1,0 +1,47 @@
+{
+    "header": {
+        "home": "Home",
+        "about": "About me",
+        "contact": "Contact",
+        "blog": "Blog"
+    },
+    "home": {
+        "title": "Hello, I'm",
+        "name": "Azatbek",
+        "description": "I am studying at the Faculty of Artificial Intelligence at Samarkand State University (SamDU) and I aim to become a Full Stack Developer. Through my interest in programming, I am studying modern web technologies and working on various practical projects. My goal is to create user-friendly, fast and high-quality web applications and develop as a professional developer."
+    },
+    "a": {
+        "telegram": "Telegram",
+        "github": "GitHub",
+        "cv": "CV Download"
+    },
+    "footer":{
+        "description":"I bring your ideas to life through clean, modern code and design.",
+        "2026": "© 2026 Azatbek dev. All rights reserved.",
+        "royxat1": {
+            "sahifa": "Pages",
+            "home": "Home",
+            "about": "About me",
+            "xizmat": "Services",
+            "portfel": "Briefcase"
+        },
+        "royxat2":{
+            "aloqa":"Contact",
+            "email":"aermalaev07@gmail.com",
+            "tel":"+998 91 371 22 10",
+            "location":"Samarkand, Uzbekistan"
+            
+        }
+    },
+
+    "about-me":{
+        "title":"About me",
+        "description":"Hello! I am Azatbek Ermalaev. I was born in the Republic of Karakalpakstan and am currently studying at the Faculty of Artificial Intelligence at Samarkand State University (SamDU). I am developing myself as a Full Stack developer. Through my interest in programming, I have been studying frontend and backend technologies. Currently, I am mainly working on frontend technologies such as React, JavaScript, Tailwind CSS and trying to create modern, user-friendly interfaces.",
+        "p":{
+            "location":"Samarkand, Uzbekistan",
+            "talaba":"SamDu student",
+            "tajriba":"1+ Year Experience"
+
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "header": {
+        "home": "Bas bet",
+        "about": "Men haqqında",
+        "contact": "Baylanıs",
+        "blog": "Blog"
+    },
+    "home": {
+        "title": "Sálem, men",
+        "name": "Azatbek",
+        "description": "Men Samarqand Memleketlik Universitetiniń (SamDU) Jasandı intellekt fakultetinde oqıp atırmın hám Full Stack developer bolıwdı maqset etemin. Programmalawğa bolǵan qızıǵıwım sebepli men zamanaǵoy web tehnologiyalardı úyrenip atırmın hám túrli praktikalıq proyektler menen islep atırmın. Maqsatım — paydalanıwshıǵa qolaylı, tez hám sapalı web ilovalardı jaratıw hám professional developer retinde rawajlanıw."
+    },
+    "a": {
+        "telegram": "Telegram",
+        "github": "GitHub",
+        "cv": "CV júklew"
+    },
+    "footer": {
+        "description": "Men sizdiń ideyalardı tazá hám zamanaǵoy kod hám dizayn arqalı tiriltirem.",
+        "2026": "© 2026 Azatbek dev. Barlıq huqıqlar qorǵalǵan.",
+        "royxat1": {
+            "sahifa": "Betler",
+            "home": "Bas bet",
+            "about": "Men haqqında",
+            "xizmat": "Xızmetler",
+            "portfel": "Portfel"
+        },
+        "royxat2": {
+            "aloqa": "Baylanıs",
+            "email": "aermalaev07@gmail.com",
+            "tel": "+998 91 371 22 10",
+            "location": "Samarqand, Ózbekstan"
+        }
+    },
+    "about-me": {
+        "title": "Men haqqında",
+        "description": "Sálem! Men Azatbek Ermalaev. Men Qaraqalpaqstan Respublikasında tuwıldım hám házirgi waqıtta Samarqand Memleketlik Universitetiniń (SamDU) Jasandı intellekt fakultetinde oqıp atırmın. Men Full Stack developer retinde ózimdi rawajlandırıp atırmın. Programmalawğa bolǵan qızıǵıwım sebepli frontend hám backend tehnologiyalardı úyrenip atırmın. Házirgi waqıtta men kábinese React, JavaScript, Tailwind CSS sıyaqlı frontend tehnologiyaları menen isleymen hám zamanaǵoy, paydalanıwshıǵa qolaylı interfeyslardı jaratıwǵa háreket etemen.",
+        "p": {
+            "location": "Samarqand, Ózbekstan",
+            "talaba": "SamDU talabası",
+            "tajriba": "1+ jıl tájiriybe"
+        }
+    }
+}

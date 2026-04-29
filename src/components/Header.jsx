@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
+import i18n from "i18next";
 import { Link } from "react-router-dom";
 
 export function Header() {
+    const { t } = useTranslation();
     return (
         <>
             <header className="bg-white/70 backdrop-blur-lg shadow-sm fixed top-0 left-0  h-16 w-full z-50 border-b border-slate-200">
@@ -14,24 +17,35 @@ export function Header() {
                         <Link className="relative hover:text-indigo-600 after:content-[''] after:absolute after:left-0 after:-bottom-1 
         after:w-0 after:h-0.5 after:bg-indigo-600 
         after:transition-all after:duration-300 hover:after:w-full"
-                            to="/">Asosiy</Link>
+                            to="/">{t("header.home")}</Link>
 
                         <Link className="relative hover:text-indigo-600 after:content-[''] after:absolute after:left-0 after:-bottom-1 
         after:w-0 after:h-0.5 after:bg-indigo-600 
         after:transition-all after:duration-300 hover:after:w-full"
-                            to="/about">Men haqimda</Link>
+                            to="/about">{t("header.about")}</Link>
 
                         <Link className="relative hover:text-indigo-600 after:content-[''] after:absolute after:left-0 after:-bottom-1 
         after:w-0 after:h-0.5 after:bg-indigo-600 
         after:transition-all after:duration-300 hover:after:w-full"
-                            to="/contact">Aloqa</Link>
+                            to="/contact">{t("header.contact")}</Link>
 
                         <Link className="relative hover:text-indigo-600 after:content-[''] after:absolute after:left-0 after:-bottom-1 
         after:w-0 after:h-0.5 after:bg-indigo-600 
         after:transition-all after:duration-300 hover:after:w-full"
-                            to="/blog">Blog</Link>
+                            to="/blog">{t("header.blog")}</Link>
+                    </div>
+                    <div>
+
+                        <div>
+                            <button onClick={() => i18n.changeLanguage("uz")}>UZ</button>
+                            <button onClick={() => i18n.changeLanguage("en")}>EN</button>
+                            <button onClick={() => i18n.changeLanguage("ru")}>RU</button>
+                            <button onClick={() => i18n.changeLanguage("qar")}>QAR</button>
+                        </div>
                     </div>
                 </nav>
+
+
             </header>
 
 
