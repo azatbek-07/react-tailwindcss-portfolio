@@ -52,7 +52,7 @@ export function About() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="w-60 h-60 md:w-80 md:h-80"
                 >
-                    <img src="/images/rasm2.jpg" className="w-full h-full object-cover rounded-2xl shadow-lg" />
+                    <img src="/images/rasmim3.jpg" className="w-full h-full object-cover rounded-2xl shadow-lg" />
                 </motion.div>
 
 
