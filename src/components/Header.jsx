@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 import { Link } from "react-router-dom";
+import  LanguageDropdown  from "../components/LanguageDropdown";
 
 export function Header() {
     const { t } = useTranslation();
@@ -36,12 +37,7 @@ export function Header() {
                     </div>
                     <div>
 
-                        <div>
-                            <button onClick={() => i18n.changeLanguage("uz")}>UZ</button>
-                            <button onClick={() => i18n.changeLanguage("en")}>EN</button>
-                            <button onClick={() => i18n.changeLanguage("ru")}>RU</button>
-                            <button onClick={() => i18n.changeLanguage("qar")}>QAR</button>
-                        </div>
+                        <LanguageDropdown />
                     </div>
                 </nav>
 
