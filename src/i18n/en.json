@@ -43,5 +43,29 @@
             "tajriba":"1+ Year Experience"
 
         }
-    }
+    },
+    "contact": {
+    "title": "Let's work together",
+    "subtitle": "If you have a project, partnership, or proposal, feel free to contact me. I am open to new ideas and opportunities.",
+    "formTitle": "Send me a message",
+    "name": "Your Name *",
+    "email": "Email Address *",
+    "subject": "Subject",
+    "message": "Message *",
+    "send": "Send Message"
+  },
+  "info": {
+    "contactMe": "Get in touch",
+    "description": "You can use the contact details below to reach me. Feel free to ask any questions or discuss collaboration opportunities.",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "follow": "Follow me",
+    "guaranteeTitle": "Fast Response Guarantee",
+    "guaranteeText": "I usually respond to all inquiries within 24 hours. For urgent projects, you can contact me directly."
+  },
+  "location": {
+    "title": "Located in Samarkand",
+    "description": "I am based in the historic city of Samarkand, Uzbekistan. Open for remote work and in-person meetings."
+  }
 }

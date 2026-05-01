@@ -40,5 +40,29 @@
             "talaba": "SamDU talabası",
             "tajriba": "1+ jıl tájiriybe"
         }
+    },
+    "contact": {
+        "title": "Birge isleyik",
+        "subtitle": "Eger sizde jobalar, seriklesiw yamasa usinislar bolsa, men menen erkin baylanisa alasiz. Jaña ideyalar hám múmkinshiliklerge ashiqman.",
+        "formTitle": "Maǵan xabar jiberiń",
+        "name": "Atıńız *",
+        "email": "Elektron pochtası *",
+        "subject": "Tema",
+        "message": "Xabar *",
+        "send": "Xabar jiberiw"
+    },
+    "info": {
+        "contactMe": "Baylanısıń",
+        "description": "Men menen baylanısıw ushın tómendegi maǵlıwmatlardan paydalanıń. Kelesi sorawlar yamasa seriklesiw boyınsha jazıń.",
+        "email": "Elektron pochta",
+        "phone": "Telefon",
+        "location": "Orın",
+        "follow": "Menı baqılań",
+        "guaranteeTitle": "Jıldam juwap garantiya",
+        "guaranteeText": "Ádette barlıq sorawlardı 24 saat ishinde juwaplayman. Şiyeli jobalar ushın tikeleý baylanısıwıńız múmkin."
+    },
+    "location": {
+        "title": "Samarqandta jaylasqan",
+        "description": "Ózbekstannıń tarihi qalası Samarqandta jaylasqanman. Qashıqtan jumıs hám jeke kezdesiwler ushın ashiqman."
     }
 }

@@ -18,7 +18,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog" element={"Bu sahifa ishlab chiqilyabdi"} />
+          <Route path="*" element={"Bunday sahifa hali yatilmadi"} />
 
 
         </Routes>

@@ -3,9 +3,12 @@ import { MdEmail } from "react-icons/md";
 import { Send } from "lucide-react";
 import { FaTelegram, FaGithub, FaPhone, FaMapMarkerAlt, FaInstagram } from "react-icons/fa";
 import { Footer } from "../components/Footer";
+import { useTranslation } from "react-i18next";
+import i18n from "i18next";
 
 
 export function Contact() {
+    const { t } = useTranslation();
     return (
         <>
             <Header />
@@ -13,12 +16,11 @@ export function Contact() {
             <section className="flex flex-col md:flex-row justify-center items-center min-h-80 gap-10 md:gap-20 px-6">
                 <div className="max-w-3xl text-center space-y-6">
                     <h1 className="font-bold text-5xl md:text-6xl leading-tight">
-                        Keling, birga ishlaymiz
+                        {t("contact.title")}
                     </h1>
 
                     <h1 className="text-lg md:text-2xl text-gray-600 leading-relaxed">
-                        Agar sizda loyiha, hamkorlik yoki takliflar bo‘lsa, men bilan bemalol bog‘lanishingiz mumkin.
-                        Yangi g‘oyalar va imkoniyatlarga ochiqman.
+                        {t("contact.subtitle")}
                     </h1>
                 </div>
             </section>
@@ -28,22 +30,22 @@ export function Contact() {
                 <div className=" w-full md:w-500px px-6 flex justify-center rounded-2xl 
                 shadow-lg hover:shadow-2xl transition duration-300 bg-white">
                     <div className="w-150 ">
-                        <h1 className="text-2xl font-bold">Menga xabar yuboring</h1><br />
+                        <h1 className="text-2xl font-bold">{t("contact.formTitle")}</h1><br />
                         <form action="" className="">
-                            <label htmlFor="name">Ismingiz*</label><br />
+                            <label htmlFor="name">{t("contact.name")}</label><br />
                             <input className="
                             border transition duration-200
                             hover:border-blue-400 focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-500 rounded-md w-full h-10" type="text" id="name" placeholder="To'liq ismingizni kiriting" /><br /><br />
 
-                            <label htmlFor="email">Elektron pochta manzili *</label><br />
+                            <label htmlFor="email">{t("contact.email")}</label><br />
                             <input className="border transition duration-200
                             hover:border-blue-400 focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-500 rounded-md w-full h-10" type="email" id="email" placeholder="Sizning-pochtangiz@misol.uz" /><br /><br />
 
-                            <label htmlFor="mavzu">Mavzu</label><br />
+                            <label htmlFor="mavzu">{t("contact.subject")}</label><br />
                             <input className="border transition duration-200
                             hover:border-blue-400 focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-500 rounded-md w-full   h-10" type="text" id="mavzu" placeholder="Bu nima haqida?" /><br /><br />
 
-                            <label htmlFor="xabar">Xabar*</label><br />
+                            <label htmlFor="xabar">{t("contact.message")}</label><br />
                             <textarea className="border transition duration-200
                             hover:border-blue-400 focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-500 rounded-md w-full h-30 " type="text-area" id="xabar" placeholder="Menga loyihangiz haqida so'zlab bering..." />
 
@@ -53,7 +55,7 @@ export function Contact() {
 bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-4 py-2 
 rounded-xl hover:scale-[1.02] hover:shadow-lg transition duration-300">
                                     <Send size={18} />
-                                    Xabar yuborish
+                                    {t("contact.send")}
 
                                 </button><br />
                             </div>
@@ -66,15 +68,15 @@ rounded-xl hover:scale-[1.02] hover:shadow-lg transition duration-300">
                 <div className="shadow-xl rounded-2xl w-165  px-3 flex justify-center">
                     <div className=" w-165  px-3 flex justify-center ">
                         <div className="w-150 ">
-                            <h1 className="text-2xl font-bold">Aloqaga chiqing</h1>
-                            <p>Men bilan bog‘lanish uchun quyidagi aloqa ma’lumotlaridan foydalanishingiz mumkin. Har qanday savol, taklif yoki hamkorlik bo‘yicha murojaat qilishingiz mumkin. Sizning xabaringizni mamnuniyat bilan kutaman va imkon qadar tezroq javob berishga harakat qilaman.</p><br />
+                            <h1 className="text-2xl font-bold">{t("info.contactMe")}</h1>
+                            <p>{t("info.description")}</p><br />
 
                             <div className="flex items-center gap-5">
                                 <div className="bg-indigo-100 p-2 rounded-xl">
                                     <MdEmail className="text-indigo-500 text-4xl " />
                                 </div>
                                 <div>
-                                    <p className="font-bold">Elektron pochta</p>
+                                    <p className="font-bold">{t("info.email")}</p>
                                     <a href="aermalaev07@gmail.com">aermalaev07@gmail.com</a>
                                 </div>
                             </div><br />
@@ -86,7 +88,7 @@ rounded-xl hover:scale-[1.02] hover:shadow-lg transition duration-300">
                                     <FaPhone className="text-indigo-500 text-4xl" />
                                 </div>
                                 <div>
-                                    <p className="font-bold">Telefon</p>
+                                    <p className="font-bold">{t("info.phone")}</p>
                                     <a href="tel:+998913712210" className="">
                                         +99 891 371-22-10
                                     </a>
@@ -98,11 +100,11 @@ rounded-xl hover:scale-[1.02] hover:shadow-lg transition duration-300">
                                     <FaMapMarkerAlt className="text-indigo-500 text-4xl" />
                                 </div>
                                 <div>
-                                    <p className="font-bold">Manzil</p>
+                                    <p className="font-bold">{t("info.location")}</p>
                                     <p>Samarqand, O'zbekiston</p>
                                 </div>
                             </div><br />
-                            <p className="font-bold">Meni kuzating</p>
+                            <p className="font-bold">{t("info.follow")}</p>
                             <div className="flex items-center gap-10 text-4xl">
 
                                 <a href="https://t.me/@A_z_a_t_b_e_k"><FaTelegram /></a>
@@ -113,8 +115,8 @@ rounded-xl hover:scale-[1.02] hover:shadow-lg transition duration-300">
 
                             <div className="flex justify-center bg-indigo-100 shadow-xl rounded-2xl ">
                                 <div className="max-w-140">
-                                    <p>Tezkor javob kafolati</p>
-                                    <p>Odatda barcha so'rovlarga 24 soat ichida javob beraman. Shoshilinch loyihalar uchun to'g'ridan-to'g'ri qo'ng'iroq qilishingiz yoki xabar yozishingiz mumkin.</p><br />
+                                    <p>{t("info.guaranteeTitle")}</p>
+                                    <p>{t("info.guaranteeText")}</p><br />
                                 </div>
                             </div><br />
                         </div>
@@ -147,20 +149,20 @@ rounded-xl hover:scale-[1.02] hover:shadow-lg transition duration-300">
 
                         {/* TITLE */}
                         <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                            Samarqandda joylashgan
+                            {t("location.title")}
                         </h1><br />
 
                         {/* DESCRIPTION */}
                         <p className="text-indigo-50 leading-relaxed text-center">
-                            O'zbekistonning tarixiy shahri Samarqandda joylashganman.
-                            Butun dunyo bo'ylab masofaviy ishlash va Samarqandda yuzma-yuz
-                            uchrashuvlar uchun ochiqman.
+                            {t("location.description")}
+
                         </p><br />
 
                     </div>
 
                 </div>
             </div><br /><br />
+
 
             <Footer />
 
