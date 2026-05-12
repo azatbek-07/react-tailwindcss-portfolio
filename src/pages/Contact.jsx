@@ -11,7 +11,7 @@ export function Contact() {
     const { t } = useTranslation();
     return (
         <>
-            <Header />
+        
 
             <section className="flex flex-col md:flex-row justify-center items-center min-h-80 gap-10 md:gap-20 px-6">
                 <div className="max-w-3xl text-center space-y-6">
@@ -164,7 +164,7 @@ rounded-xl hover:scale-[1.02] hover:shadow-lg transition duration-300">
             </div><br /><br />
 
 
-            <Footer />
+            
 
 
 

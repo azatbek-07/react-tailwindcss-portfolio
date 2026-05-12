@@ -9,7 +9,7 @@ export function Home() {
     const { t } = useTranslation();
     return (
         <>
-            <Header />
+        
             <section className="flex flex-col-reverse md:flex-row justify-around items-center min-h-screen px-4 md:px-10 pt-24 gap-10">
 
 
@@ -82,7 +82,7 @@ export function Home() {
 
 
             </section>
-            <Footer />
+            
         </>
     );
 }

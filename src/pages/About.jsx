@@ -10,7 +10,7 @@ export function About() {
     const { t } = useTranslation(); 
     return (
         <>
-            <Header />
+           
 
             <section className="flex flex-col md:flex-row justify-center items-center min-h-screen gap-10 md:gap-20 px-6">
 
@@ -60,7 +60,7 @@ export function About() {
 
             </section>
 
-            <Footer/>
+          
 
         </>
 

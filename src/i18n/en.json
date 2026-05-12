@@ -48,10 +48,10 @@
     "title": "Let's work together",
     "subtitle": "If you have a project, partnership, or proposal, feel free to contact me. I am open to new ideas and opportunities.",
     "formTitle": "Send me a message",
-    "name": "Your Name *",
-    "email": "Email Address *",
-    "subject": "Subject",
-    "message": "Message *",
+    "name": " Your Name *",
+    "email": " Email Address *",
+    "subject": " Subject",
+    "message": " Message *",
     "send": "Send Message"
   },
   "info": {
