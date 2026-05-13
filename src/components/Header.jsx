@@ -10,24 +10,24 @@ export function Header() {
 
     return (
         <header className="bg-white/80 backdrop-blur-lg shadow-sm fixed top-0 left-0 h-16 w-full z-50 border-b border-slate-200">
-            <nav className="flex justify-between items-center px-4 md:px-10 h-16 max-w-7xl mx-auto">
-                
+            <nav className="flex justify-around items-center px-4 md:px-10 h-16 max-w-7xl mx-auto">
+
                 {/* LOGO QISMI (Azatbek Ermalaev uchun) */}
                 <Link to="/" className="flex items-center gap-2 group">
-                    
+
                     <div className="flex flex-col leading-none">
                         <h1 className="text-xl md:text-2xl font-bold tracking-wide text-slate-800">
 
-                        Azatbek <span className="text-indigo-600">Ermalaev</span>
+                            Azatbek <span className="text-indigo-600">Ermalaev</span>
 
-                    </h1>
+                        </h1>
                     </div>
                 </Link>
 
                 {/* DESKTOP NAVIGATSIYA */}
                 <div className="hidden md:flex gap-10 font-medium text-slate-700">
                     {["home", "about", "contact", "blog"].map((item) => (
-                        <Link 
+                        <Link
                             key={item}
                             className="relative hover:text-indigo-600 after:content-[''] after:absolute after:left-0 after:-bottom-1 
                             after:w-0 after:h-0.5 after:bg-indigo-600 
@@ -42,8 +42,8 @@ export function Header() {
                 {/* O'NG TOMON: TIL VA BURGER MENU */}
                 <div className="flex items-center gap-4">
                     <LanguageDropdown />
-                    
-                    <button 
+
+                    <button
                         className="md:hidden text-slate-800 focus:outline-none"
                         onClick={() => setIsOpen(!isOpen)}
                     >

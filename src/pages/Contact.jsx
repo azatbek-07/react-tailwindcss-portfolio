@@ -11,46 +11,46 @@ export function Contact() {
     const { t } = useTranslation();
     return (
         <>
-        
+
 
             <section className="flex flex-col md:flex-row justify-center items-center min-h-80 gap-10 md:gap-20 px-4 sm:px-6 py-10">
-    
-    <div className="max-w-3xl text-center space-y-6">
-        <h1 className="font-bold text-3xl sm:text-5xl md:text-6xl leading-tight">
-            {t("contact.title")}
-        </h1>
 
-        <h1 className="text-base sm:text-lg md:text-2xl text-gray-600 leading-relaxed">
-            {t("contact.subtitle")}
-        </h1>
-    </div>
+                <div className="max-w-3xl text-center space-y-6">
+                    <h1 className="font-bold text-3xl sm:text-5xl md:text-6xl leading-tight">
+                        {t("contact.title")}
+                    </h1>
 
-</section>
+                    <h1 className="text-base sm:text-lg md:text-2xl text-gray-600 leading-relaxed">
+                        {t("contact.subtitle")}
+                    </h1>
+                </div>
 
-<section className="flex flex-col lg:flex-row justify-center items-stretch gap-10 lg:gap-16 px-4 sm:px-6 py-10">
+            </section>
 
-    {/* FORM */}
-    <div className="w-full max-w-2xl px-4 sm:px-6 py-8 flex justify-center rounded-2xl 
+            <section className="flex flex-col lg:flex-row justify-center items-stretch gap-10 lg:gap-16 px-4 sm:px-6 py-10">
+
+                {/* FORM */}
+                <div className="w-full max-w-2xl px-4 sm:px-6 py-8 flex justify-center rounded-2xl 
     shadow-lg hover:shadow-2xl transition duration-300 bg-white">
 
-        <div className="w-full">
+                    <div className="w-full">
 
-            <h1 className="text-2xl font-bold">
-                {t("contact.formTitle")}
-            </h1>
+                        <h1 className="text-2xl font-bold">
+                            {t("contact.formTitle")}
+                        </h1>
 
-            <br />
+                        <br />
 
-            <form action="">
+                        <form action="">
 
-                <label htmlFor="name">
-                    {t("contact.name")}
-                </label>
+                            <label htmlFor="name">
+                                {t("contact.name")}
+                            </label>
 
-                <br />
+                            <br />
 
-                <input
-                    className="
+                            <input
+                                className="
                     border transition duration-200
                     hover:border-blue-400
                     focus:outline-none
@@ -61,21 +61,21 @@ export function Contact() {
                     w-full
                     h-10
                     px-3"
-                    type="text"
-                    id="name"
-                    placeholder="To'liq ismingizni kiriting"
-                />
+                                type="text"
+                                id="name"
+                                placeholder="To'liq ismingizni kiriting"
+                            />
 
-                <br /><br />
+                            <br /><br />
 
-                <label htmlFor="email">
-                    {t("contact.email")}
-                </label>
+                            <label htmlFor="email">
+                                {t("contact.email")}
+                            </label>
 
-                <br />
+                            <br />
 
-                <input
-                    className="
+                            <input
+                                className="
                     border transition duration-200
                     hover:border-blue-400
                     focus:outline-none
@@ -86,21 +86,21 @@ export function Contact() {
                     w-full
                     h-10
                     px-3"
-                    type="email"
-                    id="email"
-                    placeholder="Sizning-pochtangiz@misol.uz"
-                />
+                                type="email"
+                                id="email"
+                                placeholder="Sizning-pochtangiz@misol.uz"
+                            />
 
-                <br /><br />
+                            <br /><br />
 
-                <label htmlFor="mavzu">
-                    {t("contact.subject")}
-                </label>
+                            <label htmlFor="mavzu">
+                                {t("contact.subject")}
+                            </label>
 
-                <br />
+                            <br />
 
-                <input
-                    className="
+                            <input
+                                className="
                     border transition duration-200
                     hover:border-blue-400
                     focus:outline-none
@@ -111,21 +111,21 @@ export function Contact() {
                     w-full
                     h-10
                     px-3"
-                    type="text"
-                    id="mavzu"
-                    placeholder="Bu nima haqida?"
-                />
+                                type="text"
+                                id="mavzu"
+                                placeholder="Bu nima haqida?"
+                            />
 
-                <br /><br />
+                            <br /><br />
 
-                <label htmlFor="xabar">
-                    {t("contact.message")}
-                </label>
+                            <label htmlFor="xabar">
+                                {t("contact.message")}
+                            </label>
 
-                <br />
+                            <br />
 
-                <textarea
-                    className="
+                            <textarea
+                                className="
                     border transition duration-200
                     hover:border-blue-400
                     focus:outline-none
@@ -137,14 +137,14 @@ export function Contact() {
                     h-32
                     p-3
                     resize-none"
-                    id="xabar"
-                    placeholder="Menga loyihangiz haqida so'zlab bering..."
-                />
+                                id="xabar"
+                                placeholder="Menga loyihangiz haqida so'zlab bering..."
+                            />
 
-                <div className="mt-5">
+                            <div className="mt-5">
 
-                    <button
-                        className="
+                                <button
+                                    className="
                         justify-center
                         flex
                         w-full
@@ -163,185 +163,185 @@ export function Contact() {
                         transition
                         duration-300">
 
-                        <Send size={18} />
+                                    <Send size={18} />
 
-                        {t("contact.send")}
+                                    {t("contact.send")}
 
-                    </button>
+                                </button>
 
-                </div>
+                            </div>
 
-            </form>
+                        </form>
 
-        </div>
-
-    </div>
-
-    {/* CONTACT INFO */}
-    <div className="shadow-xl rounded-2xl w-full max-w-2xl px-4 sm:px-6 py-8 flex justify-center bg-white">
-
-        <div className="w-full">
-
-            <h1 className="text-2xl font-bold">
-                {t("info.contactMe")}
-            </h1>
-
-            <p className="text-gray-600 leading-relaxed">
-                {t("info.description")}
-            </p>
-
-            <br />
-
-            {/* EMAIL */}
-            <div className="flex items-start sm:items-center gap-4 sm:gap-5">
-
-                <div className="bg-indigo-100 p-2 rounded-xl shrink-0">
-                    <MdEmail className="text-indigo-500 text-3xl sm:text-4xl" />
-                </div>
-
-                <div className="break-all">
-                    <p className="font-bold">
-                        {t("info.email")}
-                    </p>
-
-                    <a href="mailto:aermalaev07@gmail.com">
-                        aermalaev07@gmail.com
-                    </a>
-                </div>
-
-            </div>
-
-            <br />
-
-            {/* PHONE */}
-            <div className="flex items-start sm:items-center gap-4 sm:gap-5">
-
-                <div className="bg-indigo-100 p-2 rounded-xl shrink-0">
-                    <FaPhone className="text-indigo-500 text-3xl sm:text-4xl" />
-                </div>
-
-                <div>
-                    <p className="font-bold">
-                        {t("info.phone")}
-                    </p>
-
-                    <a href="tel:+998913712210">
-                        +998 91 371-22-10
-                    </a>
-                </div>
-
-            </div>
-
-            <br />
-
-            {/* LOCATION */}
-            <div className="flex items-start sm:items-center gap-4 sm:gap-5">
-
-                <div className="bg-indigo-100 p-2 rounded-xl shrink-0">
-                    <FaMapMarkerAlt className="text-indigo-500 text-3xl sm:text-4xl" />
-                </div>
-
-                <div>
-                    <p className="font-bold">
-                        {t("info.location")}
-                    </p>
-
-                    <p>Samarqand, O'zbekiston</p>
-                </div>
-
-            </div>
-
-            <br />
-
-            {/* SOCIAL */}
-            <p className="font-bold">
-                {t("info.follow")}
-            </p>
-
-            <div className="flex items-center gap-6 sm:gap-10 text-3xl sm:text-4xl flex-wrap mt-4">
-
-                <a href="https://t.me/A_z_a_t_b_e_k">
-                    <FaTelegram />
-                </a>
-
-                <a href="https://github.com/azatbek-07">
-                    <FaGithub />
-                </a>
-
-                <a href="https://instagram.com/ermalaev_azatbek">
-                    <FaInstagram className="text-pink-500" />
-                </a>
-
-            </div>
-
-            <br />
-
-            {/* GUARANTEE */}
-            <div className="flex justify-center bg-indigo-100 shadow-xl rounded-2xl p-4 sm:p-6">
-
-                <div className="max-w-xl text-center sm:text-left">
-
-                    <p className="font-bold">
-                        {t("info.guaranteeTitle")}
-                    </p>
-
-                    <p className="leading-relaxed">
-                        {t("info.guaranteeText")}
-                    </p>
+                    </div>
 
                 </div>
 
-            </div>
+                {/* CONTACT INFO */}
+                <div className="shadow-xl rounded-2xl w-full max-w-2xl px-4 sm:px-6 py-8 flex justify-center bg-white">
 
-        </div>
+                    <div className="w-full">
 
-    </div>
+                        <h1 className="text-2xl font-bold">
+                            {t("info.contactMe")}
+                        </h1>
 
-</section>
+                        <p className="text-gray-600 leading-relaxed">
+                            {t("info.description")}
+                        </p>
 
-<br /><br />
+                        <br />
 
-{/* LOCATION SECTION */}
-<div className="flex justify-center px-4 sm:px-6 py-10">
+                        {/* EMAIL */}
+                        <div className="flex items-start sm:items-center gap-4 sm:gap-5">
 
-    <div className="flex justify-center w-full max-w-5xl 
+                            <div className="bg-indigo-100 p-2 rounded-xl shrink-0">
+                                <MdEmail className="text-indigo-500 text-3xl sm:text-4xl" />
+                            </div>
+
+                            <div className="break-all">
+                                <p className="font-bold">
+                                    {t("info.email")}
+                                </p>
+
+                                <a href="mailto:aermalaev07@gmail.com">
+                                    aermalaev07@gmail.com
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <br />
+
+                        {/* PHONE */}
+                        <div className="flex items-start sm:items-center gap-4 sm:gap-5">
+
+                            <div className="bg-indigo-100 p-2 rounded-xl shrink-0">
+                                <FaPhone className="text-indigo-500 text-3xl sm:text-4xl" />
+                            </div>
+
+                            <div>
+                                <p className="font-bold">
+                                    {t("info.phone")}
+                                </p>
+
+                                <a href="tel:+998913712210">
+                                    +998 91 371-22-10
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <br />
+
+                        {/* LOCATION */}
+                        <div className="flex items-start sm:items-center gap-4 sm:gap-5">
+
+                            <div className="bg-indigo-100 p-2 rounded-xl shrink-0">
+                                <FaMapMarkerAlt className="text-indigo-500 text-3xl sm:text-4xl" />
+                            </div>
+
+                            <div>
+                                <p className="font-bold">
+                                    {t("info.location")}
+                                </p>
+
+                                <p>Samarqand, O'zbekiston</p>
+                            </div>
+
+                        </div>
+
+                        <br />
+
+                        {/* SOCIAL */}
+                        <p className="font-bold">
+                            {t("info.follow")}
+                        </p>
+
+                        <div className="flex items-center gap-6 sm:gap-10 text-3xl sm:text-4xl flex-wrap mt-4">
+
+                            <a href="https://t.me/A_z_a_t_b_e_k">
+                                <FaTelegram />
+                            </a>
+
+                            <a href="https://github.com/azatbek-07">
+                                <FaGithub />
+                            </a>
+
+                            <a href="https://instagram.com/ermalaev_azatbek">
+                                <FaInstagram className="text-pink-500" />
+                            </a>
+
+                        </div>
+
+                        <br />
+
+                        {/* GUARANTEE */}
+                        <div className="flex justify-center bg-indigo-100 shadow-xl rounded-2xl p-4 sm:p-6">
+
+                            <div className="max-w-xl text-center sm:text-left">
+
+                                <p className="font-bold">
+                                    {t("info.guaranteeTitle")}
+                                </p>
+
+                                <p className="leading-relaxed">
+                                    {t("info.guaranteeText")}
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <br /><br />
+
+            {/* LOCATION SECTION */}
+            <div className="flex justify-center px-4 sm:px-6 py-10">
+
+                <div className="flex justify-center w-full max-w-5xl 
     bg-gradient-to-r from-indigo-500 to-blue-500 
     rounded-3xl p-6 sm:p-10 shadow-2xl">
 
-        <div className="text-center max-w-3xl flex flex-col items-center">
+                    <div className="text-center max-w-3xl flex flex-col items-center">
 
-            {/* ANIMATED ICON */}
-            <div className="relative flex justify-center items-center mb-6">
+                        {/* ANIMATED ICON */}
+                        <div className="relative flex justify-center items-center mb-6">
 
-                {/* glow ring */}
-                <div className="absolute w-16 h-16 bg-red-400 rounded-full opacity-30 animate-ping"></div>
+                            {/* glow ring */}
+                            <div className="absolute w-16 h-16 bg-red-400 rounded-full opacity-30 animate-ping"></div>
 
-                {/* soft glow */}
-                <div className="absolute w-10 h-10 bg-red-500 rounded-full blur-xl opacity-40"></div>
+                            {/* soft glow */}
+                            <div className="absolute w-10 h-10 bg-red-500 rounded-full blur-xl opacity-40"></div>
 
-                {/* icon */}
-                <FaMapMarkerAlt className="text-red-500 text-4xl relative z-10 animate-pulse" />
+                            {/* icon */}
+                            <FaMapMarkerAlt className="text-red-500 text-4xl relative z-10 animate-pulse" />
+
+                        </div>
+
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
+                            {t("location.title")}
+                        </h1>
+
+                        <p className="text-indigo-50 leading-relaxed text-center text-sm sm:text-base md:text-lg">
+                            {t("location.description")}
+                        </p>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
-                {t("location.title")}
-            </h1>
-
-            <p className="text-indigo-50 leading-relaxed text-center text-sm sm:text-base md:text-lg">
-                {t("location.description")}
-            </p>
-
-        </div>
-
-    </div>
-
-</div>
-
-<br /><br />
+            <br /><br />
 
 
-            
+
 
 
 

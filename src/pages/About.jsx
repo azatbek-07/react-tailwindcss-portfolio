@@ -12,7 +12,7 @@ export function About() {
         <>
            
 
-         <section className="flex flex-col lg:flex-row justify-center items-center min-h-[90vh] gap-10 lg:gap-20 px-6 py-20 max-w-7xl mx-auto">
+         <section className="flex flex-col lg:flex-row justify-center items-center min-h-screen gap-10 lg:gap-20 px-6 py-20 max-w-7xl mx-auto">
     
     {/* IMAGE - Mobil qurilmalarda birinchi chiqadi */}
     <motion.div
