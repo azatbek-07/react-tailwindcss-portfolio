@@ -39,7 +39,7 @@ export default function LanguageDropdown() {
       <button
         onClick={() => setOpen(!open)}
         className="flex items-center gap-2 px-4 py-2 rounded-xl 
-        bg-white/70 dark:bg-gray-800/70 backdrop-blur-md "
+        bg-white text-slate-800 backdrop-blur-md "
       >
         <img src={current?.flag} className="w-5 h-5" />
         <span>{current?.name}</span>

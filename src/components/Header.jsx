@@ -44,7 +44,7 @@ export function Header() {
                     <LanguageDropdown />
 
                     <button
-                        className="md:hidden text-white focus:outline-none"
+                        className="md:hidden text-slate-800 focus:outline-none"
                         onClick={() => setIsOpen(!isOpen)}
                     >
                         {isOpen ? <HiX size={28} /> : <HiMenuAlt3 size={28} />}
