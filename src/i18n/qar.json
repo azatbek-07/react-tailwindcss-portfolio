@@ -64,5 +64,14 @@
     "location": {
         "title": "Samarqandta jaylasqan",
         "description": "Ózbekstannıń tarihi qalası Samarqandta jaylasqanman. Qashıqtan jumıs hám jeke kezdesiwler ushın ashiqman."
+    },
+    "blog": {
+        "title": "Meniń Blogim",
+        "description": "Úyrengenderim, jaratqanlarim hám isenegen narselerim menen bólisemen. Texnikalıq qollanbalardan baslap, kariyera túsinikleri hám dasturhi jolındaǵı jeke oylarǵa shekem.",
+        "card": {
+            "title": "Jańa azatbek.uz – Raqamli kórkem óner tuwındısı",
+            "description": "React hám Tailwind CSS járdeminde jaratılǵan zamanagóy portfolio saytı.",
+             "button": "Tolıǵıraq"
+        }
     }
 }

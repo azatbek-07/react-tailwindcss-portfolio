@@ -15,8 +15,8 @@
         "github": "GitHub",
         "cv": "CV Download"
     },
-    "footer":{
-        "description":"I bring your ideas to life through clean, modern code and design.",
+    "footer": {
+        "description": "I bring your ideas to life through clean, modern code and design.",
         "2026": "© 2026 Azatbek dev. All rights reserved.",
         "royxat1": {
             "sahifa": "Pages",
@@ -25,47 +25,53 @@
             "xizmat": "Services",
             "portfel": "Briefcase"
         },
-        "royxat2":{
-            "aloqa":"Contact",
-            "email":"aermalaev07@gmail.com",
-            "tel":"+998 91 371 22 10",
-            "location":"Samarkand, Uzbekistan"
-            
+        "royxat2": {
+            "aloqa": "Contact",
+            "email": "aermalaev07@gmail.com",
+            "tel": "+998 91 371 22 10",
+            "location": "Samarkand, Uzbekistan"
         }
     },
-
-    "about-me":{
-        "title":"About me",
-        "description":"Hello! I am Azatbek Ermalaev. I was born in the Republic of Karakalpakstan and am currently studying at the Faculty of Artificial Intelligence at Samarkand State University (SamDU). I am developing myself as a Full Stack developer. Through my interest in programming, I have been studying frontend and backend technologies. Currently, I am mainly working on frontend technologies such as React, JavaScript, Tailwind CSS and trying to create modern, user-friendly interfaces.",
-        "p":{
-            "location":"Samarkand, Uzbekistan",
-            "talaba":"SamDu student",
-            "tajriba":"1+ Year Experience"
-
+    "about-me": {
+        "title": "About me",
+        "description": "Hello! I am Azatbek Ermalaev. I was born in the Republic of Karakalpakstan and am currently studying at the Faculty of Artificial Intelligence at Samarkand State University (SamDU). I am developing myself as a Full Stack developer. Through my interest in programming, I have been studying frontend and backend technologies. Currently, I am mainly working on frontend technologies such as React, JavaScript, Tailwind CSS and trying to create modern, user-friendly interfaces.",
+        "p": {
+            "location": "Samarkand, Uzbekistan",
+            "talaba": "SamDu student",
+            "tajriba": "1+ Year Experience"
         }
     },
     "contact": {
-    "title": "Let's work together",
-    "subtitle": "If you have a project, partnership, or proposal, feel free to contact me. I am open to new ideas and opportunities.",
-    "formTitle": "Send me a message",
-    "name": " Your Name *",
-    "email": " Email Address *",
-    "subject": " Subject",
-    "message": " Message *",
-    "send": "Send Message"
-  },
-  "info": {
-    "contactMe": "Get in touch",
-    "description": "You can use the contact details below to reach me. Feel free to ask any questions or discuss collaboration opportunities.",
-    "email": "Email",
-    "phone": "Phone",
-    "location": "Location",
-    "follow": "Follow me",
-    "guaranteeTitle": "Fast Response Guarantee",
-    "guaranteeText": "I usually respond to all inquiries within 24 hours. For urgent projects, you can contact me directly."
-  },
-  "location": {
-    "title": "Located in Samarkand",
-    "description": "I am based in the historic city of Samarkand, Uzbekistan. Open for remote work and in-person meetings."
-  }
+        "title": "Let's work together",
+        "subtitle": "If you have a project, partnership, or proposal, feel free to contact me. I am open to new ideas and opportunities.",
+        "formTitle": "Send me a message",
+        "name": " Your Name *",
+        "email": " Email Address *",
+        "subject": " Subject",
+        "message": " Message *",
+        "send": "Send Message"
+    },
+    "info": {
+        "contactMe": "Get in touch",
+        "description": "You can use the contact details below to reach me. Feel free to ask any questions or discuss collaboration opportunities.",
+        "email": "Email",
+        "phone": "Phone",
+        "location": "Location",
+        "follow": "Follow me",
+        "guaranteeTitle": "Fast Response Guarantee",
+        "guaranteeText": "I usually respond to all inquiries within 24 hours. For urgent projects, you can contact me directly."
+    },
+    "location": {
+        "title": "Located in Samarkand",
+        "description": "I am based in the historic city of Samarkand, Uzbekistan. Open for remote work and in-person meetings."
+    },
+    "blog": {
+        "title": "My Blog",
+        "description": "Sharing what I've learned, created, and believe in. From technical guides to career insights and personal reflections on the developer's journey.",
+        "card": {
+            "title": "New azatbek.uz – A Digital Artwork",
+            "description": "A modern portfolio website built with React and Tailwind CSS.",
+            "button": "Read More"
+        }
+    }
 }

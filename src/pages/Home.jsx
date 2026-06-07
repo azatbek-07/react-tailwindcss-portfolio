@@ -8,7 +8,7 @@ import { FaTelegram, FaGithub, FaInstagram } from "react-icons/fa";
 export function Home() {
     const { t } = useTranslation();
     return (
-        <>
+        <div className="bg-blue-50"> 
             {/* Header va Footer chaqirilganini hisobga olib, section paddingini to'g'irlaymiz */}
           <section className="flex flex-col lg:flex-row justify-around items-center min-h-screen px-4 sm:px-6 md:px-10 pt-32 pb-10 gap-10 lg:gap-20 overflow-hidden">
 
@@ -91,6 +91,6 @@ export function Home() {
     </motion.div>
 
 </section>
-        </>
+        </div>
     );
 }

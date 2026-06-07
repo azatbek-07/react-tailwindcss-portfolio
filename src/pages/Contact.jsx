@@ -1,5 +1,6 @@
 import { Header } from "../components/Header";
 import { MdEmail } from "react-icons/md";
+import { motion } from "framer-motion";
 import { Send } from "lucide-react";
 import { FaTelegram, FaGithub, FaPhone, FaMapMarkerAlt, FaInstagram } from "react-icons/fa";
 import { Footer } from "../components/Footer";
@@ -11,46 +12,57 @@ export function Contact() {
     const { t } = useTranslation();
     return (
         <>
+            <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1, delay: 0.2 }}
+                className="flex justify-center items-center z-0 lg:order-last"
+            >
 
+                <section className="flex flex-col md:flex-row justify-center items-center min-h-80 gap-10 md:gap-20 px-4 sm:px-6 py-10">
 
-            <section className="flex flex-col md:flex-row justify-center items-center min-h-80 gap-10 md:gap-20 px-4 sm:px-6 py-10">
-
-                <div className="max-w-3xl text-center space-y-6">
-                    <h1 className="font-bold text-3xl sm:text-5xl md:text-6xl leading-tight">
-                        {t("contact.title")}
-                    </h1>
-
-                    <h1 className="text-base sm:text-lg md:text-2xl text-gray-600 leading-relaxed">
-                        {t("contact.subtitle")}
-                    </h1>
-                </div>
-
-            </section>
-
-            <section className="flex flex-col lg:flex-row justify-center items-stretch gap-10 lg:gap-16 px-4 sm:px-6 py-10">
-
-                {/* FORM */}
-                <div className="w-full max-w-2xl px-4 sm:px-6 py-8 flex justify-center rounded-2xl 
-    shadow-lg hover:shadow-2xl transition duration-300 bg-white">
-
-                    <div className="w-full">
-
-                        <h1 className="text-2xl font-bold">
-                            {t("contact.formTitle")}
+                    <div className="max-w-3xl text-center space-y-6">
+                        <h1 className="font-bold text-3xl sm:text-5xl md:text-6xl leading-tight">
+                            {t("contact.title")}
                         </h1>
 
-                        <br />
+                        <h1 className="text-base sm:text-lg md:text-2xl text-gray-600 leading-relaxed">
+                            {t("contact.subtitle")}
+                        </h1>
+                    </div>
 
-                        <form action="">
+                </section></motion.div>
+            <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1, delay: 0.2 }}
+                className="flex justify-center items-center z-0 lg:order-last"
+            >
 
-                            <label htmlFor="name">
-                                {t("contact.name")}
-                            </label>
+                <section className="flex flex-col lg:flex-row justify-center items-stretch gap-10 lg:gap-16 px-4 sm:px-6 py-10">
+
+                    {/* FORM */}
+                    <div className="w-full max-w-200 px-4 sm:px-6 py-8 flex justify-center rounded-2xl 
+    shadow-lg hover:shadow-2xl transition duration-300 bg-white ">
+
+                        <div className="w-full">
+
+                            <h1 className="text-2xl font-bold">
+                                {t("contact.formTitle")}
+                            </h1>
 
                             <br />
 
-                            <input
-                                className="
+                            <form action="">
+
+                                <label htmlFor="name">
+                                    {t("contact.name")}
+                                </label>
+
+                                <br />
+
+                                <input
+                                    className="
                     border transition duration-200
                     hover:border-blue-400
                     focus:outline-none
@@ -61,21 +73,21 @@ export function Contact() {
                     w-full
                     h-10
                     px-3"
-                                type="text"
-                                id="name"
-                                placeholder="To'liq ismingizni kiriting"
-                            />
+                                    type="text"
+                                    id="name"
+                                    placeholder="To'liq ismingizni kiriting"
+                                />
 
-                            <br /><br />
+                                <br /><br />
 
-                            <label htmlFor="email">
-                                {t("contact.email")}
-                            </label>
+                                <label htmlFor="email">
+                                    {t("contact.email")}
+                                </label>
 
-                            <br />
+                                <br />
 
-                            <input
-                                className="
+                                <input
+                                    className="
                     border transition duration-200
                     hover:border-blue-400
                     focus:outline-none
@@ -86,21 +98,21 @@ export function Contact() {
                     w-full
                     h-10
                     px-3"
-                                type="email"
-                                id="email"
-                                placeholder="Sizning-pochtangiz@misol.uz"
-                            />
+                                    type="email"
+                                    id="email"
+                                    placeholder="Sizning-pochtangiz@misol.uz"
+                                />
 
-                            <br /><br />
+                                <br /><br />
 
-                            <label htmlFor="mavzu">
-                                {t("contact.subject")}
-                            </label>
+                                <label htmlFor="mavzu">
+                                    {t("contact.subject")}
+                                </label>
 
-                            <br />
+                                <br />
 
-                            <input
-                                className="
+                                <input
+                                    className="
                     border transition duration-200
                     hover:border-blue-400
                     focus:outline-none
@@ -111,21 +123,21 @@ export function Contact() {
                     w-full
                     h-10
                     px-3"
-                                type="text"
-                                id="mavzu"
-                                placeholder="Bu nima haqida?"
-                            />
+                                    type="text"
+                                    id="mavzu"
+                                    placeholder="Bu nima haqida?"
+                                />
 
-                            <br /><br />
+                                <br /><br />
 
-                            <label htmlFor="xabar">
-                                {t("contact.message")}
-                            </label>
+                                <label htmlFor="xabar">
+                                    {t("contact.message")}
+                                </label>
 
-                            <br />
+                                <br />
 
-                            <textarea
-                                className="
+                                <textarea
+                                    className="
                     border transition duration-200
                     hover:border-blue-400
                     focus:outline-none
@@ -137,14 +149,14 @@ export function Contact() {
                     h-32
                     p-3
                     resize-none"
-                                id="xabar"
-                                placeholder="Menga loyihangiz haqida so'zlab bering..."
-                            />
+                                    id="xabar"
+                                    placeholder="Menga loyihangiz haqida so'zlab bering..."
+                                />
 
-                            <div className="mt-5">
+                                <div className="mt-5">
 
-                                <button
-                                    className="
+                                    <button
+                                        className="
                         justify-center
                         flex
                         w-full
@@ -163,141 +175,141 @@ export function Contact() {
                         transition
                         duration-300">
 
-                                    <Send size={18} />
+                                        <Send size={18} />
 
-                                    {t("contact.send")}
+                                        {t("contact.send")}
 
-                                </button>
+                                    </button>
 
-                            </div>
+                                </div>
 
-                        </form>
-
-                    </div>
-
-                </div>
-
-                {/* CONTACT INFO */}
-                <div className="shadow-xl rounded-2xl w-full max-w-2xl px-4 sm:px-6 py-8 flex justify-center bg-white">
-
-                    <div className="w-full">
-
-                        <h1 className="text-2xl font-bold">
-                            {t("info.contactMe")}
-                        </h1>
-
-                        <p className="text-gray-600 leading-relaxed">
-                            {t("info.description")}
-                        </p>
-
-                        <br />
-
-                        {/* EMAIL */}
-                        <div className="flex items-start sm:items-center gap-4 sm:gap-5">
-
-                            <div className="bg-indigo-100 p-2 rounded-xl shrink-0">
-                                <MdEmail className="text-indigo-500 text-3xl sm:text-4xl" />
-                            </div>
-
-                            <div className="break-all">
-                                <p className="font-bold">
-                                    {t("info.email")}
-                                </p>
-
-                                <a href="mailto:aermalaev07@gmail.com">
-                                    aermalaev07@gmail.com
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <br />
-
-                        {/* PHONE */}
-                        <div className="flex items-start sm:items-center gap-4 sm:gap-5">
-
-                            <div className="bg-indigo-100 p-2 rounded-xl shrink-0">
-                                <FaPhone className="text-indigo-500 text-3xl sm:text-4xl" />
-                            </div>
-
-                            <div>
-                                <p className="font-bold">
-                                    {t("info.phone")}
-                                </p>
-
-                                <a href="tel:+998913712210">
-                                    +998 91 371-22-10
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <br />
-
-                        {/* LOCATION */}
-                        <div className="flex items-start sm:items-center gap-4 sm:gap-5">
-
-                            <div className="bg-indigo-100 p-2 rounded-xl shrink-0">
-                                <FaMapMarkerAlt className="text-indigo-500 text-3xl sm:text-4xl" />
-                            </div>
-
-                            <div>
-                                <p className="font-bold">
-                                    {t("info.location")}
-                                </p>
-
-                                <p>Samarqand, O'zbekiston</p>
-                            </div>
-
-                        </div>
-
-                        <br />
-
-                        {/* SOCIAL */}
-                        <p className="font-bold">
-                            {t("info.follow")}
-                        </p>
-
-                        <div className="flex items-center gap-6 sm:gap-10 text-3xl sm:text-4xl flex-wrap mt-4">
-
-                            <a href="https://t.me/A_z_a_t_b_e_k">
-                                <FaTelegram />
-                            </a>
-
-                            <a href="https://github.com/azatbek-07">
-                                <FaGithub />
-                            </a>
-
-                            <a href="https://instagram.com/ermalaev_azatbek">
-                                <FaInstagram className="text-pink-500" />
-                            </a>
-
-                        </div>
-
-                        <br />
-
-                        {/* GUARANTEE */}
-                        <div className="flex justify-center bg-indigo-100 shadow-xl rounded-2xl p-4 sm:p-6">
-
-                            <div className="max-w-xl text-center sm:text-left">
-
-                                <p className="font-bold">
-                                    {t("info.guaranteeTitle")}
-                                </p>
-
-                                <p className="leading-relaxed">
-                                    {t("info.guaranteeText")}
-                                </p>
-
-                            </div>
+                            </form>
 
                         </div>
 
                     </div>
 
-                </div>
+                    {/* CONTACT INFO */}
+                    <div className="shadow-xl rounded-2xl w-full max-w-2xl px-4 sm:px-6 py-8 flex justify-center bg-white">
 
-            </section>
+                        <div className="w-full">
+
+                            <h1 className="text-2xl font-bold">
+                                {t("info.contactMe")}
+                            </h1>
+
+                            <p className="text-gray-600 leading-relaxed">
+                                {t("info.description")}
+                            </p>
+
+                            <br />
+
+                            {/* EMAIL */}
+                            <div className="flex items-start sm:items-center gap-4 sm:gap-5">
+
+                                <div className="bg-indigo-100 p-2 rounded-xl shrink-0">
+                                    <MdEmail className="text-indigo-500 text-3xl sm:text-4xl" />
+                                </div>
+
+                                <div className="break-all">
+                                    <p className="font-bold">
+                                        {t("info.email")}
+                                    </p>
+
+                                    <a href="mailto:aermalaev07@gmail.com">
+                                        aermalaev07@gmail.com
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <br />
+
+                            {/* PHONE */}
+                            <div className="flex items-start sm:items-center gap-4 sm:gap-5">
+
+                                <div className="bg-indigo-100 p-2 rounded-xl shrink-0">
+                                    <FaPhone className="text-indigo-500 text-3xl sm:text-4xl" />
+                                </div>
+
+                                <div>
+                                    <p className="font-bold">
+                                        {t("info.phone")}
+                                    </p>
+
+                                    <a href="tel:+998913712210">
+                                        +998 91 371-22-10
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <br />
+
+                            {/* LOCATION */}
+                            <div className="flex items-start sm:items-center gap-4 sm:gap-5">
+
+                                <div className="bg-indigo-100 p-2 rounded-xl shrink-0">
+                                    <FaMapMarkerAlt className="text-indigo-500 text-3xl sm:text-4xl" />
+                                </div>
+
+                                <div>
+                                    <p className="font-bold">
+                                        {t("info.location")}
+                                    </p>
+
+                                    <p>Samarqand, O'zbekiston</p>
+                                </div>
+
+                            </div>
+
+                            <br />
+
+                            {/* SOCIAL */}
+                            <p className="font-bold">
+                                {t("info.follow")}
+                            </p>
+
+                            <div className="flex items-center gap-6 sm:gap-10 text-3xl sm:text-4xl flex-wrap mt-4">
+
+                                <a href="https://t.me/A_z_a_t_b_e_k">
+                                    <FaTelegram />
+                                </a>
+
+                                <a href="https://github.com/azatbek-07">
+                                    <FaGithub />
+                                </a>
+
+                                <a href="https://instagram.com/ermalaev_azatbek">
+                                    <FaInstagram className="text-pink-500" />
+                                </a>
+
+                            </div>
+
+                            <br />
+
+                            {/* GUARANTEE */}
+                            <div className="flex justify-center bg-indigo-100 shadow-xl rounded-2xl p-4 sm:p-6">
+
+                                <div className="max-w-xl text-center sm:text-left">
+
+                                    <p className="font-bold">
+                                        {t("info.guaranteeTitle")}
+                                    </p>
+
+                                    <p className="leading-relaxed">
+                                        {t("info.guaranteeText")}
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section></motion.div>
 
             <br /><br />
 

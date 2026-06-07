@@ -64,5 +64,14 @@
     "location": {
         "title": "Samarqandda joylashgan",
         "description": "O‘zbekistonning tarixiy shahri Samarqandda joylashganman. Masofaviy ishlash va uchrashuvlar uchun ochiqman."
+    },
+    "blog": {
+        "title": "Mening Blogim",
+        "description": "O'rganganlarim, yaratganlarim va ishongan narsalarim bilan o'rtoqlashaman. Texnik qo'llanmalardan tortib, kariyera tushunchalari va dasturchi yo'lidagi shaxsiy mulohazalargacha.",
+        "card": {
+            "title": "Yangi azatbek.uz – Raqamli san'at asari",
+            "description": "React va Tailwind CSS yordamida yaratilgan zamonaviy portfolio sayti.",
+            "button": "Batafsil"
+        }
     }
 }
