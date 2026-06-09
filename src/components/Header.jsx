@@ -26,7 +26,7 @@ export function Header() {
 
                 {/* DESKTOP NAVIGATSIYA */}
                 <div className="hidden md:flex gap-10 font-medium text-slate-700">
-                    {["home", "about", "contact", "blog"].map((item) => (
+                    {["home", "about", "portfel", "blog", "contact"].map((item) => (
                         <Link
                             key={item}
                             className="relative hover:text-indigo-600 after:content-[''] after:absolute after:left-0 after:-bottom-1 
@@ -44,11 +44,18 @@ export function Header() {
                     <LanguageDropdown />
 
                     <button
-                        className="md:hidden text-slate-800 focus:outline-none"
+                        className="md:hidden  text-slate-800 focus:outline-none"
                         onClick={() => setIsOpen(!isOpen)}
                     >
                         {isOpen ? <HiX size={28} /> : <HiMenuAlt3 size={28} />}
                     </button>
+
+                    <Link
+                        to="/portfel"
+                        className="flex items-center justify-center font-bold border w-20 h-10 rounded-xl cursor-pointer bg-indigo-700 text-white"
+                    >
+                        Portfel
+                    </Link>
                 </div>
             </nav>
 
@@ -57,9 +64,17 @@ export function Header() {
                 <div className="md:hidden absolute top-16 left-0 w-full bg-white border-b border-slate-200 py-6 flex flex-col items-center gap-6 shadow-xl animate-in slide-in-from-top duration-300">
                     <Link onClick={() => setIsOpen(false)} className="font-medium text-slate-700 hover:text-indigo-600" to="/">{t("header.home")}</Link>
                     <Link onClick={() => setIsOpen(false)} className="font-medium text-slate-700 hover:text-indigo-600" to="/about">{t("header.about")}</Link>
-                    <Link onClick={() => setIsOpen(false)} className="font-medium text-slate-700 hover:text-indigo-600" to="/contact">{t("header.contact")}</Link>
+                    <Link onClick={() => setIsOpen(false)} className="font-medium text-slate-700 hover:text-indigo-600" to="/portfel">Portfel</Link>
                     <Link onClick={() => setIsOpen(false)} className="font-medium text-slate-700 hover:text-indigo-600" to="/blog">{t("header.blog")}</Link>
+                    <Link onClick={() => setIsOpen(false)} className="font-medium text-slate-700 hover:text-indigo-600" to="/contact">{t("header.contact")}</Link>
+                    <Link
+                        to="/portfel"
+                        className="flex items-center justify-center font-bold border w-20 h-10 rounded-xl cursor-pointer bg-indigo-700 text-white"
+                    >
+                        Portfel
+                    </Link>
                 </div>
+                
             )}
         </header>
     );

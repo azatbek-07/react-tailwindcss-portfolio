@@ -3,7 +3,8 @@
         "home": "Asosiy",
         "about": "Men haqimda",
         "contact": "Aloqa",
-        "blog": "Blog"
+        "blog": "Blog",
+        "portfel": "Portfel"
     },
     "home": {
         "title": "Salom, men",
@@ -74,4 +75,6 @@
             "button": "Batafsil"
         }
     }
+
+    
 }

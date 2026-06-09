@@ -9,6 +9,7 @@ import { Blog } from './pages/Blog'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { NotFound } from './pages/NotFound'
+import { Portfel } from './pages/Portfel'
 
 
 function ScrollToTop() {
@@ -37,6 +38,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path='/blog' element={<Blog />} />
+          <Route path='/portfel' element={<Portfel />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
 
