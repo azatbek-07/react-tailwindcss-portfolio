@@ -11,7 +11,7 @@ export function Home() {
     return (
         <div className="bg-blue-50">
             {/* Header va Footer chaqirilganini hisobga olib, section paddingini to'g'irlaymiz */}
-            <section className="flex flex-col lg:flex-row justify-center items-center min-h-screen px-4 sm:px-6 md:px-10 pt-32 pb-10  overflow-hidden">
+            <section className="flex  flex-col lg:flex-row justify-center items-center min-h-screen px-4 sm:px-6 md:px-10 pt-32 pb-10  overflow-hidden">
 
                 {/* IMAGE - Mobil qurilmalarda birinchi chiqadi, lg ekranda esa o'ngga o'tadi (order-last orqali) */}
                 <motion.div
@@ -36,7 +36,7 @@ export function Home() {
                     transition={{ duration: 0.8 }}
                     className="w-full max-w-2xl text-center lg:text-left"
                 >
-                    <div className="space-y-6 text-center lg:text-left">
+                    <div className="space-y-6 text-center  lg:text-left">
                         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-slate-800">
                             {t("home.title")}{" "}
                             <b className="text-indigo-600">

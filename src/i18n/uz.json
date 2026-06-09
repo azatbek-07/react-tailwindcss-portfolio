@@ -74,7 +74,21 @@
             "description": "React va Tailwind CSS yordamida yaratilgan zamonaviy portfolio sayti.",
             "button": "Batafsil"
         }
+    },
+    "portfel": {
+        "title": "Loyihalar galereyasi",
+        "description": " Mening tajribam va qilgan ishlarim. Barcha loyihalar responsive, zamonaviy va foydalanuvchilarga qulay tarzda yaratilgan.",
+        "card1": {
+            "title": "Portfelim",
+            "description": "Shaxsiy portfolio saytim. Loyihalarim, tajribam va kontakt ma'lumotlarim joylashgan."
+        },
+        "card2": {
+            "title": "Login Register",
+            "description": "React va Node.js dan foydalanib ishlangan. Foydalanuvchi ro'yxatdan o'tadi va tizimga kiradi."
+        },
+        "card3": {
+            "title": "SamDu oshxonasi",
+            "description": "SamDU oshxonasi menyusi va buyurtmalarni boshqarish uchun web ilova."
+        }
     }
-
-    
 }

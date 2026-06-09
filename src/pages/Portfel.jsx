@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import i18n from "i18next";
 
 export function Portfel() {
+    const { t } = useTranslation();
     return (
         <>
             <motion.div
@@ -11,8 +14,8 @@ export function Portfel() {
             >
                 <section className="flex flex-col md:flex-row justify-center items-center min-h-80 gap-10 md:gap-20 px-4 sm:px-6 py-10">
                     <div className="w-full md:w-180 text-center px-4">
-                        <h1 className="font-bold text-3xl sm:text-5xl md:text-6xl leading-tight">Loyihalar galereyasi</h1>
-                        <p className="text-base sm:text-lg md:text-2xl text-gray-600 leading-relaxed px-2"> Mening tajribam va qilgan ishlarim. Barcha loyihalar responsive, zamonaviy va foydalanuvchilarga qulay tarzda yaratilgan.</p>
+                        <h1 className="font-bold text-3xl sm:text-5xl md:text-6xl leading-tight">{t("portfel.title")}</h1>
+                        <p className="text-base sm:text-lg md:text-2xl text-gray-600 leading-relaxed px-2"> {t("portfel.description")}</p>
                     </div>
                 </section></motion.div>
             <motion.div
@@ -30,8 +33,8 @@ export function Portfel() {
                             </div>
                             <div className="flex justify-center p-4 sm:p-5">
                                 <div className="w-100 space-y-2">
-                                    <h1 className="text-xl sm:text-2xl font-bold text-gray-900">Portfelim azatbek.uz</h1><br />
-                                    <p className="text-gray-600 text-sm sm:text-base">Shaxsiy portfolio saytim. Loyihalarim, tajribam va kontakt ma'lumotlarim joylashgan.</p><br />
+                                    <h1 className="text-xl sm:text-2xl font-bold text-gray-900">{t("portfel.card1.title")} azatbek.uz</h1><br />
+                                    <p className="text-gray-600 text-sm sm:text-base">{t("portfel.card1.description")}</p><br />
 
                                     <div className="flex flex-wrap gap-2 my-4">
                                         <span className="inline-flex items-center px-2 sm:px-3 py-1 bg-indigo-100 text-gray-700 text-xs sm:text-sm rounded-full">
@@ -69,8 +72,8 @@ export function Portfel() {
                             </div>
                             <div className="flex justify-center p-4 sm:p-5">
                                 <div className="w-100 space-y-2">
-                                    <h1 className="text-xl sm:text-2xl font-bold text-gray-900">Login Register</h1><br />
-                                    <p className="text-gray-600 text-sm sm:text-base">React va Node.js dan foydalanib ishlangan. Foydalanuvchi ro'yxatdan o'tadi va tizimga kiradi.</p><br />
+                                    <h1 className="text-xl sm:text-2xl font-bold text-gray-900">{t("portfel.card2.title")}</h1><br />
+                                    <p className="text-gray-600 text-sm sm:text-base">{t("portfel.card2.description")}</p><br />
 
                                     <div className="flex flex-wrap gap-2 my-4">
                                         <span className="inline-flex items-center px-2 sm:px-3 py-1 bg-indigo-100 text-gray-700 text-xs sm:text-sm rounded-full">
@@ -107,8 +110,8 @@ export function Portfel() {
                             </div>
                             <div className="flex justify-center p-4 sm:p-5">
                                 <div className="w-100 space-y-2">
-                                    <h1 className="text-xl sm:text-2xl font-bold text-gray-900">SamDu oshxonasi</h1><br />
-                                    <p className="text-gray-600 text-sm sm:text-base">SamDU oshxonasi menyusi va buyurtmalarni boshqarish uchun web ilova.</p><br />
+                                    <h1 className="text-xl sm:text-2xl font-bold text-gray-900">{t("portfel.card3.title")}</h1><br />
+                                    <p className="text-gray-600 text-sm sm:text-base">{t("portfel.card3.description")}</p><br />
 
                                     <div className="flex flex-wrap gap-2 my-4">
                                         <span className="inline-flex items-center px-2 sm:px-3 py-1 bg-indigo-100 text-gray-700 text-xs sm:text-sm rounded-full">

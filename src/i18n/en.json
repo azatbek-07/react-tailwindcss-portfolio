@@ -73,5 +73,21 @@
             "description": "A modern portfolio website built with React and Tailwind CSS.",
             "button": "Read More"
         }
+    },
+    "portfel": {
+        "title": "Project Gallery",
+        "description": "My experience and completed work. All projects are responsive, modern, and user-friendly.",
+        "card1": {
+            "title": "My Portfolio",
+            "description": "My personal portfolio website. It showcases my projects, experience, and contact information."
+        },
+        "card2": {
+            "title": "Login & Register",
+            "description": "Built using React and Node.js. Users can register and log in to the system."
+        },
+        "card3": {
+            "title": "SamDU Cafeteria",
+            "description": "A web application for managing the SamDU cafeteria menu and orders."
+        }
     }
 }

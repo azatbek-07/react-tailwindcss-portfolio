@@ -71,7 +71,23 @@
         "card": {
             "title": "Jańa azatbek.uz – Raqamli kórkem óner tuwındısı",
             "description": "React hám Tailwind CSS járdeminde jaratılǵan zamanagóy portfolio saytı.",
-             "button": "Tolıǵıraq"
+            "button": "Tolıǵıraq"
+        }
+    },
+    "portfel": {
+        "title": "Joybarlar galereyası",
+        "description": "Meniń tájiriybem hám islegen jumıslarım. Barlıq joybarlar responsive, zamanagóy hám paydalanıwshılar ushın qolay etip jaratılǵan.",
+        "card1": {
+            "title": "Portfoliom",
+            "description": "Jeke portfolio saytim. Bul jerde joybarlarım, tájiriybem hám baylanıs maǵlıwmatlarım jaylasqan."
+        },
+        "card2": {
+            "title": "Kiriw hám Dizimnen ótiw",
+            "description": "React hám Node.js arqalı islep shıǵılǵan. Paydalanıwshı dizimnen ótip, sistemaǵa kiredi."
+        },
+        "card3": {
+            "title": "SamDU Asxanası",
+            "description": "SamDU asxanasınıń menyusi hám buyırtpalardı basqarıw ushın web qollanba."
         }
     }
 }
