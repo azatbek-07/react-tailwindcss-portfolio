@@ -69,7 +69,7 @@ export function Home() {
                             </a>
 
                             <a
-                                href="/cv.pdf"
+                                href="/images/cv.pdf"
                                 download
                                 className="w-full sm:w-40 h-11 flex items-center justify-center gap-2 border border-emerald-600 text-emerald-600 rounded-md hover:bg-emerald-600 hover:text-white transition-all duration-300 shadow-sm"
                             >
